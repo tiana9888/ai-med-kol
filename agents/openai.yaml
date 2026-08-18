@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI医疗KOL内容策划 Skill"
+  short_description: "AI医疗KOL内容策划与合规审核助手"
+  default_prompt: "Use $ai-medical-kol-content-strategy to plan an AI medical KOL content strategy."
