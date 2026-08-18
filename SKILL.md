@@ -1,5 +1,5 @@
 ---
-name: ai-medical-kol-content-strategy
+name: ai-med-kol
 description: Use when planning, benchmarking, briefing, scripting, reviewing, differentiating, or optimizing KOL creator content for AI medical, healthcare, digital health, or clinical technology campaigns, especially Chinese video/social content.
 ---
 

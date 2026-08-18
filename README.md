@@ -31,16 +31,16 @@ For tools that do not have a native skill system, including Workbubby-style dome
 Install to the cross-runtime skills directory:
 
 ```bash
-git clone https://github.com/tiana9888/ai-medical-kol-content-strategy.git
+git clone https://github.com/tiana9888/ai-med-kol.git
 mkdir -p ~/.agents/skills
-cp -R ai-medical-kol-content-strategy ~/.agents/skills/
+cp -R ai-med-kol ~/.agents/skills/
 ```
 
 Or use the install script:
 
 ```bash
-git clone https://github.com/tiana9888/ai-medical-kol-content-strategy.git
-cd ai-medical-kol-content-strategy
+git clone https://github.com/tiana9888/ai-med-kol.git
+cd ai-med-kol
 ./install.sh
 ```
 
@@ -50,30 +50,30 @@ Use one of these paths if your AI tool requires an app-specific skills directory
 
 | Tool | Install path |
 | --- | --- |
-| Cross-runtime default | `~/.agents/skills/ai-medical-kol-content-strategy` |
-| Codex | `~/.codex/skills/ai-medical-kol-content-strategy` |
-| Claude Code | `~/.claude/skills/ai-medical-kol-content-strategy` |
-| Copilot CLI / compatible agents | `~/.agents/skills/ai-medical-kol-content-strategy` |
-| Gemini CLI / compatible agents | `~/.agents/skills/ai-medical-kol-content-strategy` |
+| Cross-runtime default | `~/.agents/skills/ai-med-kol` |
+| Codex | `~/.codex/skills/ai-med-kol` |
+| Claude Code | `~/.claude/skills/ai-med-kol` |
+| Copilot CLI / compatible agents | `~/.agents/skills/ai-med-kol` |
+| Gemini CLI / compatible agents | `~/.agents/skills/ai-med-kol` |
 | Workbubby / domestic AI workspaces | Use the tool's custom skill, knowledge base, or prompt-library import flow |
 
 Manual Codex install example:
 
 ```bash
 mkdir -p ~/.codex/skills
-cp -R ai-medical-kol-content-strategy ~/.codex/skills/
+cp -R ai-med-kol ~/.codex/skills/
 ```
 
 ## Invoke
 
 ```text
-Use $ai-medical-kol-content-strategy to plan an AI medical KOL content strategy.
+Use $ai-med-kol to plan an AI medical KOL content strategy.
 ```
 
 Chinese prompt example:
 
 ```text
-用 $ai-medical-kol-content-strategy 帮我为一个 AI 医疗产品做视频号 KOL 内容策划。
+用 $ai-med-kol 帮我为一个 AI 医疗产品做视频号 KOL 内容策划。
 ```
 
 If your tool does not support `$skill-name` invocation, import or paste `SKILL.md` as the main instruction, then add `references/` and `templates/` as supporting knowledge files.
@@ -81,7 +81,7 @@ If your tool does not support `$skill-name` invocation, import or paste `SKILL.m
 ## Structure
 
 ```text
-ai-medical-kol-content-strategy/
+ai-med-kol/
 ├── SKILL.md
 ├── agents/
 │   └── openai.yaml

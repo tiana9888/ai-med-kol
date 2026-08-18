@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-SKILL_NAME="ai-medical-kol-content-strategy"
+SKILL_NAME="ai-med-kol"
 SOURCE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 TARGET_ROOT="${1:-${AGENT_SKILLS_DIR:-$HOME/.agents/skills}}"
 TARGET_DIR="$TARGET_ROOT/$SKILL_NAME"
@@ -24,4 +24,4 @@ cp -R "$SOURCE_DIR/references" "$TARGET_DIR/"
 cp -R "$SOURCE_DIR/templates" "$TARGET_DIR/"
 
 echo "Installed $SKILL_NAME to $TARGET_DIR"
-echo "Invoke with: Use \$ai-medical-kol-content-strategy to plan an AI medical KOL content strategy."
+echo "Invoke with: Use \$ai-med-kol to plan an AI medical KOL content strategy."
